@@ -146,7 +146,7 @@ var wikiCards = {
 
                 var wikidataLink = document.createElement('a')
                 wikipediaLink.setAttribute('title','Data from Wikidata')
-                wikidataLink.setAttribute('href','http://www.wikidata.org/entity/' + data.qid)
+                wikidataLink.setAttribute('href','https://www.wikidata.org/entity/' + data.qid)
                 wikidataLink.innerHTML="Wikidata"
                 wikiLinks.appendChild(wikidataLink)
                 
@@ -220,7 +220,7 @@ var wikiCards = {
     
     parseQId: function(qid,callback){
         
-        this.utilGetJson('http://www.wikidata.org/wiki/Special:EntityData/'+qid+'.json',function(data){
+        this.utilGetJson('https://www.wikidata.org/wiki/Special:EntityData/'+qid+'.json',function(data){
            
             if (data && data.entities && data.entities[qid]){
                 var labels = data.entities[qid].labels
