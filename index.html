@@ -32,7 +32,7 @@
       </pre>
       <div>
         <div></div>
-        <input type="text" placeholder="enter Qid"><button>Build New</button>
+        <input type="text" placeholder="enter Qid" id="build-input"><button id="build-button">Build New</button>
       
       </div>
     </div>
@@ -41,15 +41,26 @@
   
   
   <script>
+    
+      document.addEventListener("DOMContentLoaded", function(event) { 
           var x = document.createElement('div')
           x.setAttribute("data-qid","Q40909")
           x.classList.add('wiki-knowledge-card')
           document.getElementById('panels').appendChild(x)
-          
-          setTimeout(()=>{
-            wikiCards.init()
-          },5000);
-          
+          wikiCards.init()  
+      })
+    
+      document.getElementById('build-button').addEventListener("click", function(event) {
+        document.getElementById('panels').innerHTML = ""
+        
+        var x = document.createElement('div')
+        x.setAttribute("data-qid",document.getElementById('build-input').value)
+        x.classList.add('wiki-knowledge-card')
+        document.getElementById('panels').appendChild(x)
+        wikiCards.init()
+      })
+
+        
     
   </script>  
   
