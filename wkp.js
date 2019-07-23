@@ -6,15 +6,12 @@ var wikiCards = {
     init: function(prefLanguage){
         
         // find all the possible cards
-        
         document.querySelectorAll(".wiki-knowledge-card").forEach((wc)=>{
             
             wc.innerHTML = ""
             
             this.parseQId(wc.dataset.qid, (data)=>{
-                
-                console.log(data)
-                
+                        
                 // find the first lang we should use, pick a default one if one of our prefs arent found
                 var useLang = data[Object.keys(data)[0]]
                 for (lang in wikiCards.prefLangs){                
