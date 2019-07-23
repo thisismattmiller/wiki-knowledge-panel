@@ -45,8 +45,10 @@
           x.setAttribute("data-qid","Q40909")
           x.classList.add('wiki-knowledge-card')
           document.getElementById('panels').appendChild(x)
-          wikiCards.init()
-    
+          
+          setTimeout(()=>{
+            wikiCards.init()
+          },5000);
           
     
   </script>  
