@@ -13,7 +13,8 @@
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #ddd;        
+    border-bottom: 1px solid #ddd;
+    background-position: center center;     
 }
 .knowledge-card-wiki-image-portrait{
     height: 250px;
