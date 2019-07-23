@@ -1,0 +1,48 @@
+
+
+.wiki-knowledge-card{
+    background-color: #efefef;
+    margin-bottom: 8px;    
+    border: 1px solid #ddd;        
+}
+.wiki-knowledge-card select{
+    max-width:40px;
+}
+
+.knowledge-card-wiki-image{
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;        
+}
+.knowledge-card-wiki-image-portrait{
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ddd;
+    background-position-x: center;
+}
+
+.knowledge-card-wiki-title{
+    font-size: 14px;
+    font-weight:bold;
+    margin-top:0.5em;
+    margin-left: 1rem;
+}
+.knowledge-card-wiki-text{
+    font-size: 12px;
+    margin: 1rem;
+}
+.knowledge-card-wiki-menu{
+    display:flex;
+    margin: 1rem;
+}
+.knowledge-card-wiki-menu a{
+    margin-right:5px;
+}
+.knowledge-card-wiki-wikiLinks{
+    flex:1;
+    line-height: 20px;
+}
+
+
